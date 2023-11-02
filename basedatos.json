@@ -32,7 +32,16 @@
     "PE PREGUNTA 02": ["SEGUNDA PREGUNTA: 2. El primer paso del pensamiento computacional es: identificar el problema.",
                        "¿VERDADERO? o ¿FALSO?"],
     "PE PREGUNTA 03": ["TERCERA PREGUNTA: ¿Qué es un algoritmo en terminos de pensamiento computacional?",
-                       "1) Un patron de diseño visual 2) Un lenguaje de programacion 3) Una secuencia de pasos para resolver un problema 4) Una representacion grafica de datos"]
+                       "1) Un patron de diseño visual 2) Un lenguaje de programacion 3) Una secuencia de pasos para resolver un problema 4) Una representacion grafica de datos"],
+    "circuitos de memoria": ["El almacenamiento de la información se realiza en dispositivos de memoria, capaces de mantener la información binaria que se ha escrito con la posibilidad de recuperarla.", 
+                            "Además, se destaca la importancia de organizar la memoria para combinar velocidad y capacidad de almacenamiento. Los dispositivos de memoria se distribuyen en una jerarquía, siendo los más rápidos más cercanos a la CPU. Los parámetros clave para evaluar los circuitos de memoria son:",
+                        "1) Tiempo de acceso: se refiere al tiempo necesario para recuperar información almacenada en memoria. Se diferencia entre memorias de acceso aleatorio (mismo tiempo de acceso para todos los datos) y memorias de acceso secuencial (tiempo de acceso depende de la posición en la memoria).",
+                        "2) Densidad de información: se relaciona con el espacio ocupado por bit debido a la tecnología utilizada. Se busca almacenar gran cantidad de información en el menor espacio posible.", 
+                        "3) Volatilidad de la memoria: se refiere a la pérdida de información si no se mantiene una alimentación constante en el circuito. Es importante que la información de configuración y programas de inicio permanezcan almacenados y se recuperan automáticamente al encender la computadora."],
+    "RAM estatica asincronica": ["La RAM estática asíncrona o SRAM es una memoria volátil y de acceso aleatorio muy rápida, ideal para ser utilizada como memoria principal en computadoras. Sin embargo, su alto costo limita su uso masivo y suele emplearse en registros y memoria caché, más cercana al procesador. La celda de almacenamiento SRAM utiliza 4 transistores para almacenar datos como 1 o 0 mientras haya alimentación."],
+    "RAM estatica sincronica": ["La RAM estática síncrona es una memoria volátil y de rápido acceso, similar en tecnología a las SRAM asíncronas, pero con la diferencia de que utiliza una señal de reloj para sincronizar las operaciones de lectura y escritura. Esto es útil cuando se accede a direcciones consecutivas en memoria, ya que se proporciona una dirección base primero y luego, en cada flanco del reloj, la memoria proporciona o recibe datos."],
+    "RAM dinamica": ["La RAM dinámica, o DRAM, es una memoria volátil y de acceso aleatorio, similar en ese aspecto a las SRAM. Sin embargo, utiliza celdas de memoria con un solo transistor, lo que permite una alta integración. El problema principal es que estas celdas se descargan con el tiempo, lo que requiere un refresco periódico para evitar la pérdida de datos, lo que la hace más lenta en comparación con las SRAM. Las DRAM tienen una estructura en forma de matriz, con direcciones multiplexadas en filas y columnas."],
+    "CM PREGUNTA 01": ["¿Cuál de los tres tipos de memoria es más eficiente en velocidad y almacenamiento?"]
 }
 
 

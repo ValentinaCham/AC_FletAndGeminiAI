@@ -262,6 +262,10 @@ if __name__ == "__main__":
                         ruta_imagen = "./img/aprendizaje/memoria.png"
                         cargar_imagen(ruta_imagen)
                         texto_a_audio(datos['memoria'])
+                        texto_a_audio(datos['circuitos de memoria'])
+                        texto_a_audio(datos['ram'])
+                        texto_a_audio(datos['rom'])
+                        texto_a_audio(datos['flash'])
                         seguir()
                         comprobar_respuesta(respuesta, nombre)
 

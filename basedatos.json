@@ -8,6 +8,28 @@
         "Procesamiento de datos. Almacenamiento de datos. Transferencia de datos",
         "El computador debe procesar datos, transformando la informacion recibida. Asi mismo debe almacenar datos. tanto resultados de computaciones intermedias, como el resultado final de estas. De la misma manera el computador debe realizar transferencia de datos entre su entorno y el mismo. Para realizar estas tres funciones es necesario un mecanismo de control que gobierne el flujo de datos entre los diversos modulos."
     ],
+    "ejecucion": [
+        "Ejecución de una Instrucción: La ejecución de una instrucción se refiere al proceso mediante el cual las tareas que un usuario desea realizar en una computadora se llevan a cabo de forma progresiva. Esto sucede a medida que se ejecutan las instrucciones que componen un programa. Programar un computador implica realizar el programa de usuario y también programar la gestión de los recursos del computador, como el procesador, la memoria y los dispositivos de entrada/salida."
+    ],
+    "sistema": [
+        "El Sistema Operativo: Un sistema operativo se define como un conjunto de programas, ya sea en software o firmware, que hace utilizable el hardware de una computadora. Los sistemas operativos administran el hardware para lograr un rendimiento eficiente. Son responsables de proporcionar una interfaz de usuario, permitir que los usuarios compartan hardware y datos, evitar conflictos de accesos simultáneos a un mismo recurso y localizar errores, advirtiendo a los usuarios.",
+        "Son esenciales para el funcionamiento correcto de una computadora, ya que administran los recursos principales del computador.",
+        "Software: El software se refiere a los programas de computadora, datos y protocolos que proporcionan instrucciones a un sistema informático. En otras palabras, son las instrucciones que dicen a la computadora qué hacer y cómo hacerlo. Existen dos tipos principales de software: el software de sistema, que controla y coordina el hardware de la computadora, y el software de aplicación, que realiza tareas específicas para los usuarios.",
+        "Hardware: El hardware se refiere a los componentes físicos y tangibles de una computadora o cualquier dispositivo electrónico. Incluye todas las partes físicas, como el procesador, la memoria, el disco duro, la placa base, la pantalla, el teclado y el ratón, entre otros. Estos componentes son necesarios para que el software funcione y los usuarios interactúen con la computadora.",
+        "Firmware: El firmware es un tipo de software específico que está integrado en un dispositivo de hardware y proporciona control de bajo nivel para el dispositivo. A diferencia del software, el firmware está diseñado para ser permanente y no se modifica con frecuencia. Se encuentra en dispositivos electrónicos como impresoras, cámaras, enrutadores y otros dispositivos similares, y asegura que el hardware funcione correctamente y se comunique con el software del sistema."  
+    ],
+    "lenguaje":[
+        "Lenguajes de Alto nivel, ensamblador y codigo maquina",
+        "Lenguajes de Alto Nivel: Son lenguajes de programación como C o Pascal, que son cercanos al lenguaje humano y se utilizan para escribir programas. Estas instrucciones deben traducirse a código máquina para que la computadora pueda entenderlas.",
+        "Código Máquina: Es el lenguaje binario que entienden las máquinas. Las instrucciones en código máquina están codificadas como una secuencia de unos y ceros y son interpretadas directamente por el computador. Antes de ejecutarse, las instrucciones de alto nivel se traducen a código máquina durante un proceso llamado compilación. Las instrucciones de código máquina se almacenan en memoria junto con los datos y son ejecutadas por la CPU (Central Processing Unit) de la computadora."
+    ],
+    "tecnologia":[
+        "Tecnologias de objetos Una circuitería más compleja implica un mayor coste económico, ya que el aumento de la complejidad se traduce en un mayor tamaño de los circuitos. Para poder entender por qué el coste aumenta de forma casi exponencial con el tamaño es interesante realizar una rápida revisión de los fundamentos de la fabricación de los circuitos integrados.",
+        "Tecnologías de Circuitos Integrados Las piezas que edifican un computador vendrian a llamarse circuitos integrados (CIs) Las propiedades básicas que caracterizan un circuito integrado son: Tecnología de Circuitos Integrados: Los CIs pueden basarse en diversas tecnologías, como los transistores bipolares (BJT) y los transistores de efecto campo (CMOS). La tecnología CMOS es ampliamente utilizada en la actualidad debido a su eficiencia y capacidad de integración. Se menciona que el CMOS funciona con menos consumo de energía en comparación con tecnologías anteriores.",
+        "Velocidad: La velocidad de los CIs se refiere al tiempo de respuesta y los retrasos en su funcionamiento. La frecuencia de funcionamiento no es la única medida de velocidad en los CIs más complejos, como los procesadores. Factores como los ciclos por instrucción y el repertorio de instrucciones también son cruciales para medir su rendimiento. La ejecución en paralelo acelera las tareas, pero a menudo aumenta la complejidad del circuito.",
+        "Escala de Integración: La escala de integración se refiere a la cantidad de componentes lógicos que un CI puede contener en una oblea de silicio. Cuanto más preciso sea el proceso de fabricación, menor puede ser el tamaño de los componentes, lo que permite incluir más lógica en un espacio dado.",
+        "Tamaño: El tamaño de un CI tiene un impacto en su costo de producción. CIs más grandes requieren obleas de silicio más grandes, lo que puede aumentar los costos. Además, la probabilidad de ejemplares defectuosos aumenta cuando se fabrican CIs más grandes."
+    ],
     "unidad central de proceso": [
         "La unidad central de proceso controla el funcionamiento de todos los elementos del computador. Controla el flujo de datos, los procesa, y gobierna el secuenciamiento y las acciones en todo el sistema.",
         "Una CPU básica consta principalmente de las siguientes unidades",
@@ -19,6 +41,36 @@
     "memoria": [
         "En la memoria se almacenaran el programa y los datos que, provenientes de un dispositivo de Entrada Salida o dispositivos de almacenamiento secundario, va a ejecutar la CPU. La matriz de memoria está organizada en palabras, cada una de las cuales tiene asignada una direccion que indica su posicion en la matriz.",
         "La memoria en un computador es un dispositivo electrónico que almacena temporalmente programas y datos que están siendo utilizados por el procesador, para acceder a ellos más rapidamente."
+    ],
+    "circuitos de memoria":[
+        "1.4.2 Circuitos de Memoria El almacenamiento de la información se realiza en dispositivos de memoria, capaces de mantener la información binaria que se ha escrito con la posibilidad de recuperarla.",
+        "Además, se destaca la importancia de organizar la memoria para combinar velocidad y capacidad de almacenamiento. Los dispositivos de memoria se distribuyen en una jerarquía, siendo los más rápidos más cercanos a la CPU.",
+        "Los parámetros clave para evaluar los circuitos de memoria son: 1)Tiempo de acceso: se refiere al tiempo necesario para recuperar información almacenada en memoria. Se diferencia entre memorias de acceso aleatorio (mismo tiempo de acceso para todos los datos) y memorias de acceso secuencial (tiempo de acceso depende de la posición en la memoria).",
+        "Densidad de información: se relaciona con el espacio ocupado por bit debido a la tecnología utilizada. Se busca almacenar gran cantidad de información en el menor espacio posible.",
+        "Volatilidad de la memoria: se refiere a la pérdida de información si no se mantiene una alimentación constante en el circuito. Es importante que la información de configuración y programas de inicio permanezcan almacenados y se recuperan automáticamente al encender la computadora."
+    ],
+    "ram":[
+        "Ahora explicaremos los 3 tipos de memoria RAM:",
+        "1) RAM estatica asincronica: La RAM estática asíncrona o SRAM es una memoria volátil y de acceso aleatorio muy rápida, ideal para ser utilizada como memoria principal en computadoras. Sin embargo, su alto costo limita su uso masivo y suele emplearse en registros y memoria caché, más cercana al procesador. La celda de almacenamiento SRAM utiliza 4 transistores para almacenar datos como 1 o 0 mientras haya alimentación.",
+        "2) RAM estatica sincronica: La RAM estática síncrona es una memoria volátil y de rápido acceso, similar en tecnología a las SRAM asíncronas, pero con la diferencia de que utiliza una señal de reloj para sincronizar las operaciones de lectura y escritura. Esto es útil cuando se accede a direcciones consecutivas en memoria, ya que se proporciona una dirección base primero y luego, en cada flanco del reloj, la memoria proporciona o recibe datos.",
+        "3) RAM dinamica: La RAM dinámica, o DRAM, es una memoria volátil y de acceso aleatorio, similar en ese aspecto a las SRAM. Sin embargo, utiliza celdas de memoria con un solo transistor, lo que permite una alta integración. El problema principal es que estas celdas se descargan con el tiempo, lo que requiere un refresco periódico para evitar la pérdida de datos, lo que la hace más lenta en comparación con las SRAM. Las DRAM tienen una estructura en forma de matriz, con direcciones multiplexadas en filas y columnas."
+    ],
+    "rom":[
+        "Ahora hablaremos sobre la memoria ROM",
+        "Memorias ROM Las memorias ROM (Read Only Memory) son dispositivos de almacenamiento no volátil diseñados para el acceso aleatorio y únicamente para lectura. Una vez que han sido programadas, su contenido solo puede ser leído y no modificado.",
+        "Las memorias ROM se utilizan comúnmente para almacenar el código esencial que permite a los sistemas arrancar cuando se les suministra energía o para almacenar datos críticos del sistema.",
+        "Las ROM se fabrican en grandes cantidades utilizando máscaras de silicio, lo que no es práctico para prototipos o producciones limitadas debido a los costos asociados a la creación de estas máscaras de silicio. Sin embargo, afortunadamente, existen tres tipos de ROM que pueden ser programadas en entornos de laboratorio, y algunas de ellas incluso permiten su borrado posterior.",
+        "Memoria PROM:Las PROM o (Programmable Read Only Memories) son memorias ROM programables eléctricamente mediante un programador especial que genera picos de tensión altos, generando corrientes que funden físicamente unos fusibles grabando el dispositivo de forma permanente. Las memorias PROM tienen el inconveniente de que no pueden ser borradas y de que el proceso de escritura se debe realizar con una tarjeta especial.",
+        "Memoria EPROM: Las EPROM o (Erasable Programmable Read Only Memories) se programan también con un dispositivo de programación especial conectado a un ordenador. La diferencia con las PROM es que las EPROM sí que se pueden borrar. El borrado en la memoria EPROM se realiza mediante rayos UV, para ello las EPROM tienen un pequeña ventana de como transparente a los UV mediante la cual se realiza la exposición de la matriz de celdas.",
+        "Una vez están programadas deben cubrirse con una etiqueta para evitar el borrado accidental de la memoria.",
+        "Memoria EEPROM: Las EEPROM o (Electrícally Erasable Programmable Read Onty Memories) son memorias programables y borrables mediante un dispositivo especial que se conecta a un ordenador. Este programador/borrador de EEPROM genera picos de tensión para la programación y borrado de las EEPROM."
+    ],
+    "flash":[
+        "Memoria Flash La memoria Flash es un tipo de memoria no volátil utilizada para almacenar datos de lectura y escritura de acceso aleatorio. La memoria Flash funcionan como las SRAM en lectura, pero difieren en escritura al requerir un borrado previo antes de escribir nuevos datos.",
+        "La memoria Flash tiene una configuración interna especial que exige la eliminación completa o, al menos, del sector adecuado antes de la escritura, incluso si se desea modificar solo un byte.",
+        "La memoria Flash cuenta con un registro de instrucciones y una máquina de estados que controla las operaciones de borrado y escritura en bloques o toda la memoria.",
+        "La memoria Flash está desplazando a las EEPROM y EPROM como dispositivos para almacenar programas reprogramables.",
+        "La ventaja clave de la memoria Flash es que no requiere tensiones elevadas para ser reprogramada, a diferencia de las EEPROM. La memoria Flash solo requiere una alimentación de +5V, lo que permite su integración en sistemas como ROM del sistema sin necesidad de extraerlas."
     ],
     "entrada salida": [
         "Un computador tiene una gran cantidad de dispositivos de entrada y salida. Desde un teclado hasta un monitor de video, pasando por un disco duro, todos son dispositivos que la CPU necesita para obtener datos o para almacenar o mostrar resultados.",
@@ -63,6 +115,44 @@
             "b) Un lenguaje de programación",
             "c) Una secuencia de pasos para resolver un problema",
             "d) Una representación gráfica de datos"
+        ],
+        "respuesta_correcta": "c"
+    },
+    "ME PREGUNTA 01": {
+        "pregunta": "¿Cuál de los tres tipos de memoria es más eficiente en velocidad y almacenamiento?",
+        "opciones": [
+            "a) Memoria RAM estática asíncrona",
+            "b) Memoria RAM estática síncrona",
+            "c) Memoria RAM dinámica"
+        ],
+        "respuesta_correcta": "a"
+    },
+    "ME PREGUNTA 02": {
+        "pregunta": "¿Cuál es la diferencia clave entre una memoria EPROM y una memoria PROM?"
+    },
+    "ME PREGUNTA 03": {
+        "pregunta": "¿Cuál es la principal característica de una memoria ROM en términos de escritura y lectura?"
+    },
+    "SI PREGUNTA 01": {
+        "pregunta": "¿Cuál es el papel fundamental del sistema operativo en un computador y cómo se diferencia de los lenguajes de alto nivel, ensamblador y código máquina en el proceso de ejecución de una instrucción?"
+    },
+    "TC PREGUNTA 01": {
+        "pregunta": "¿Cuáles son las ventajas y desventajas de la tecnología CMOS en comparación con la tecnología BJT en la fabricación de circuitos integrados?",
+        "opciones": [
+            "a) Ventajas: menor consumo de energía, alta capacidad de integración. Desventajas: menor velocidad.",
+            "b) Ventajas: alta velocidad, mayor capacidad de integración. Desventajas: alto consumo de energía.",
+            "c) Ventajas: alta velocidad, menor consumo de energía. Desventajas: menor capacidad de integración.",
+            "d) Ventajas: alta velocidad, mayor capacidad de integración. Desventajas: menor consumo de energía."
+        ],
+        "respuesta_correcta": "d"
+    },
+    "TC PREGUNTA 02": {
+        "pregunta": "¿Cómo afecta la escala de integración en la eficiencia y el costo de producción de los circuitos integrados, y cuáles son las consideraciones clave al determinar el tamaño de un CI en una oblea de silicio?",
+        "opciones": [
+            "a) Afecta negativamente la eficiencia y aumenta los costos. El tamaño del CI depende solo de la tecnología utilizada.",
+            "b) Afecta positivamente la eficiencia y disminuye los costos. El tamaño del CI se determina por el repertorio de instrucciones.",
+            "c) Afecta negativamente la eficiencia y disminuye los costos. El tamaño del CI depende de la complejidad y la probabilidad de ejemplares defectuosos.",
+            "d) Afecta positivamente la eficiencia y aumenta los costos. El tamaño del CI se determina por la frecuencia de funcionamiento."
         ],
         "respuesta_correcta": "c"
     }

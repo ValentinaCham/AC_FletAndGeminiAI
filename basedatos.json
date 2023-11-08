@@ -1,63 +1,69 @@
 {
-    "bienvenida": ["Hola. Soy tu Asistente Virtual. Fui creada para instruirte todo respecto a la Estructura de un computador. Antes de empezar ¿Podrias decirme tu nombre?"],
-    
-    "aprendizaje": ["Un computador es un sistema secuencial sincrono complejo que procesa informacion. La informacion dentro del ordenador se trata de forma binaria, utilizando solamente los digitos o valores logicos uno y cero, al contrario que el sistema metrico decimal habitual formado por digitos del cero al nueve.", 
-                     "Para empezar a describir la estructura basica de un computador, cabe definir las funciones que se espera que pueda realizar una maquina denominada como tal. En terminos generales un computador tiene que realizar tres funciones: ",
-                     "Procesamiento de datos. Almacenamiento de datos. Transferencia de datos",
-                     "El computador debe procesar datos, transformando la informacion recibida. Asi mismo debe almacenar datos. tanto resultados de computaciones intermedias, como el resultado final de estas. De la misma manera el computador debe realizar transferencia de datos entre su entorno y el mismo. Para realizar estas tres funciones es necesario un mecanismo de control que gobierne el flujo de datos entre los diversos modulos."],
-    
-    
-    "unidad central de proceso": ["La unidad central de proceso controla el funcionamiento de todos los elementos del computador. Controla el flujo de datos, los procesa, y gobierna el secuenciamiento y las acciones en todo el sistema.",
-                                  "Una CPU básica consta principalmente de las siguientes unidades","Unidad de Control UC. Unidad Aritmetico Logica ALU. Registros internos",
-                                  "La UNIDAD DE CONTROL UC, se encarga de leer de la memoria las instrucciones que se debe ejecutar y de secuenciar el acceso a los datos y las operaciones a realizar por la unidad de proceso. Se encarga de acceder a memoria habilitando un camino de datos para que las instrucciones y los datos lleguen a la CPU.",
-                                  "La Unidad Aritmetico Logica ALU, es la parte de la CPU encargada de realizar las transformaciones de los datos. La ALU consta de una serie de modulos que permiten realizar operaciones aritmeticas y logicas.",
-                                  "Los registros internos son pequeñas memorias de alta velocidad dentro de un computador que se utilizan para almacenar datos temporales y realizar operaciones rapidas."],
-    "memoria": ["En la memoria se almacenaran el programa y los datos que, provenientes de un dispositivo de Entrada Salida o dispositivos de almacenamiento secundario, va a ejecutar la CPU. La matriz de memoria está organizada en palabras, cada una de las cuales tiene asignada una direccion que indica su posicion en la matriz.",
-                "La memoria en un computador es un dispositivo electrónico que almacena temporalmente programas y datos que están siendo utilizados por el procesador, para acceder a ellos más rapidamente."],
-    "entrada salida": ["Un computador tiene una gran cantidad de dispositivos de entrada y salida. Desde un teclado hasta un monitor de video, pasando por un disco duro, todos son dispositivos que la CPU necesita para obtener datos o para almacenar o mostrar resultados.",
-                       "El principal problema de estos dispositivos perifericos es su gran variedad. Muchos de ellos comunican a un operador humano con el computador y otros sirven de conexion con otros computadores.",
-                       "El objetivo de cada transferencia es llevar los datos desde el periferico a una zona concreta de la memoria y viceversa."],  
-    "sistemas de interconexión buses": ["La conexion entre los diversos componentes de un computador se efectua fisicamente a traves de los buses. Un bus se define como un enlace de comunicacion compartido que usa multiples cables para conectar subsistemas.",
-                                        "Cada linea es capaz de transmitir una tensión electrica que representa un uno o un cero binario.",
-                                        "Las señales de los buses estan agrupadas siguiendo un criterio de funcionalidad:",
-                                        "Bus de datos. Bus de direcciones. Bus de control. Bus de alimentacion",
-                                        "Los buses de datos son las iineas por las que se transmiten los datos entre los diversos dispositivos que forman el computador.",
-                                        "Los buses de direcciones sirven para indicar a la memoria o al resto de dispositivos la posicion del dato que se quiere acceder.",
-                                        "Los buses de control agrupan todas las señales de control que gobiernan el acceso al bus de datos y direcciones. Agrupa señales de lectura, escritura, arbitraje, entre otros.",
-                                        "Los buses de alimentacion son los cables o conexiones que suministran energia electrica a los componentes internos del equipo, como la placa madre, la CPU, las tarjetas de expansion y los dispositivos de almacenamiento."],
-    "perifericos": ["Los perifericos son todos aquellos dispositivos que sin ser imprescindibles en la estructura de un computador, son necesarios para suministrar datos a la maquina o visualizar los resultados.",
-                    "Los periféricos de entrada de datos son interruptores, teclados, ratones, pantallas graficas interactivas y digitalizadores de imagenes (escaners)."],
-    "PE PREGUNTA 01": ["PRIMERA PREGUNTA: ¿Cual es el objetivo principal del pensamiento computacional?",
-                       "a) Resolver problemas utilizando algoritmos y abstraccion. b) Programar robots y sistemas autonomos. c) Diseñar hardware de computadoras."],
-    "PE PREGUNTA 02": ["SEGUNDA PREGUNTA: 2. El primer paso del pensamiento computacional es: identificar el problema.",
-                       "¿VERDADERO? o ¿FALSO?"],
-    "PE PREGUNTA 03": ["TERCERA PREGUNTA: ¿Qué es un algoritmo en terminos de pensamiento computacional?",
-                       "1) Un patron de diseño visual 2) Un lenguaje de programacion 3) Una secuencia de pasos para resolver un problema 4) Una representacion grafica de datos"],
-    "circuitos de memoria": ["El almacenamiento de la información se realiza en dispositivos de memoria, capaces de mantener la información binaria que se ha escrito con la posibilidad de recuperarla.", 
-                            "Además, se destaca la importancia de organizar la memoria para combinar velocidad y capacidad de almacenamiento. Los dispositivos de memoria se distribuyen en una jerarquía, siendo los más rápidos más cercanos a la CPU. Los parámetros clave para evaluar los circuitos de memoria son:",
-                        "1) Tiempo de acceso: se refiere al tiempo necesario para recuperar información almacenada en memoria. Se diferencia entre memorias de acceso aleatorio (mismo tiempo de acceso para todos los datos) y memorias de acceso secuencial (tiempo de acceso depende de la posición en la memoria).",
-                        "2) Densidad de información: se relaciona con el espacio ocupado por bit debido a la tecnología utilizada. Se busca almacenar gran cantidad de información en el menor espacio posible.", 
-                        "3) Volatilidad de la memoria: se refiere a la pérdida de información si no se mantiene una alimentación constante en el circuito. Es importante que la información de configuración y programas de inicio permanezcan almacenados y se recuperan automáticamente al encender la computadora."],
-    "RAM estatica asincronica": ["La RAM estática asíncrona o SRAM es una memoria volátil y de acceso aleatorio muy rápida, ideal para ser utilizada como memoria principal en computadoras. Sin embargo, su alto costo limita su uso masivo y suele emplearse en registros y memoria caché, más cercana al procesador. La celda de almacenamiento SRAM utiliza 4 transistores para almacenar datos como 1 o 0 mientras haya alimentación."],
-    "RAM estatica sincronica": ["La RAM estática síncrona es una memoria volátil y de rápido acceso, similar en tecnología a las SRAM asíncronas, pero con la diferencia de que utiliza una señal de reloj para sincronizar las operaciones de lectura y escritura. Esto es útil cuando se accede a direcciones consecutivas en memoria, ya que se proporciona una dirección base primero y luego, en cada flanco del reloj, la memoria proporciona o recibe datos."],
-    "RAM dinamica": ["La RAM dinámica, o DRAM, es una memoria volátil y de acceso aleatorio, similar en ese aspecto a las SRAM. Sin embargo, utiliza celdas de memoria con un solo transistor, lo que permite una alta integración. El problema principal es que estas celdas se descargan con el tiempo, lo que requiere un refresco periódico para evitar la pérdida de datos, lo que la hace más lenta en comparación con las SRAM. Las DRAM tienen una estructura en forma de matriz, con direcciones multiplexadas en filas y columnas."],
-    "tecnología de circuitos integrados":["Una circuitería más compleja implica un mayor coste económico, ya que el aumento de la complejidad se traduce en un mayor tamaño de los circuitos","Para poder entender por qué el coste aumenta de forma casi exponencial con el tamaño es interesante realizar una rápida revisión de los fundamentos de la fabricación de los circuitos integrados.","Los CIs pueden basarse en diversas tecnologías, como los transistores bipolares (BJT) y los transistores de efecto campo (CMOS).","La tecnología CMOS es ampliamente utilizada en la actualidad debido a su eficiencia y capacidad de integración."," Se menciona que el CMOS funciona con menos consumo de energía en comparación con tecnologías anteriores."],
-    "velocidad de ci":["La velocidad de los CIs se refiere al tiempo de respuesta y los retrasos en su funcionamiento.","La frecuencia de funcionamiento no es la única medida de velocidad en los CIs más complejos, como los procesadores","Factores como los ciclos por instrucción y el repertorio de instrucciones también son cruciales para medir su rendimiento.","La ejecución en paralelo acelera las tareas, pero a menudo aumenta la complejidad del circuito."],
-    "escala de integración de ci":["La escala de integración se refiere a la cantidad de componentes lógicos que un CI puede contener en una oblea de silicio.","Cuanto más preciso sea el proceso de fabricación, menor puede ser el tamaño de los componentes, lo que permite incluir más lógica en un espacio dado."],
-    "tamaño de ci":["El tamaño de un CI tiene un impacto en su costo de producción.","CIs más grandes requieren obleas de silicio más grandes, lo que puede aumentar los costos.","Además, la probabilidad de ejemplares defectuosos aumenta cuando se fabrican CIs más grandes."],
-    "CI PREGUNTA 01": ["¿Cuáles son las ventajas y desventajas de la tecnología CMOS en comparación con la tecnología BJT en la fabricación de circuitos integrados?"
-                        ,"1) Ventajas: menor consumo de energía, alta capacidad de integración. Desventajas: menor velocidad."
-                        ,"2) Ventajas: alta velocidad, mayor capacidad de integración. Desventajas: alto consumo de energía."    
-                        ,"3) Ventajas: alta velocidad, menor consumo de energía. Desventajas: menor capacidad de integración."
-                        ,"4) Ventajas: alta velocidad, mayor capacidad de integración. Desventajas: menor consumo de energía."    ],
-    "CI PREGUNTA 02": ["¿Cómo afecta la escala de integración en la eficiencia y el costo de producción de los circuitos integrados, y cuáles son las consideraciones clave al determinar el tamaño de un CI en una oblea de silicio?",
-                        "1) Afecta negativamente la eficiencia y aumenta los costos. El tamaño del CI depende solo de la tecnología utilizada.",
-                        "2) Afecta positivamente la eficiencia y disminuye los costos. El tamaño del CI se determina por el repertorio de instrucciones.",
-                        "3) Afecta negativamente la eficiencia y disminuye los costos. El tamaño del CI depende de la complejidad y la probabilidad de ejemplares defectuosos.",
-                        "4) Afecta positivamente la eficiencia y aumenta los costos. El tamaño del CI se determina por la frecuencia de funcionamiento."],
-    "CM PREGUNTA 01": ["¿Cuál de los tres tipos de memoria es más eficiente en velocidad y almacenamiento?"]
+    "bienvenida": [
+        "Hola. Soy tu Asistente Virtual. Fui creada para instruirte todo respecto a la Estructura de un computador. Antes de empezar ¿Podrias decirme tu nombre?"
+    ],
+    "aprendizaje": [
+        "Un computador es un sistema secuencial sincrono complejo que procesa informacion. La informacion dentro del ordenador se trata de forma binaria, utilizando solamente los digitos o valores logicos uno y cero, al contrario que el sistema metrico decimal habitual formado por digitos del cero al nueve.",
+        "Para empezar a describir la estructura basica de un computador, cabe definir las funciones que se espera que pueda realizar una maquina denominada como tal. En terminos generales un computador tiene que realizar tres funciones: ",
+        "Procesamiento de datos. Almacenamiento de datos. Transferencia de datos",
+        "El computador debe procesar datos, transformando la informacion recibida. Asi mismo debe almacenar datos. tanto resultados de computaciones intermedias, como el resultado final de estas. De la misma manera el computador debe realizar transferencia de datos entre su entorno y el mismo. Para realizar estas tres funciones es necesario un mecanismo de control que gobierne el flujo de datos entre los diversos modulos."
+    ],
+    "unidad central de proceso": [
+        "La unidad central de proceso controla el funcionamiento de todos los elementos del computador. Controla el flujo de datos, los procesa, y gobierna el secuenciamiento y las acciones en todo el sistema.",
+        "Una CPU básica consta principalmente de las siguientes unidades",
+        "Unidad de Control UC. Unidad Aritmetico Logica ALU. Registros internos",
+        "La UNIDAD DE CONTROL UC, se encarga de leer de la memoria las instrucciones que se debe ejecutar y de secuenciar el acceso a los datos y las operaciones a realizar por la unidad de proceso. Se encarga de acceder a memoria habilitando un camino de datos para que las instrucciones y los datos lleguen a la CPU.",
+        "La Unidad Aritmetico Logica ALU, es la parte de la CPU encargada de realizar las transformaciones de los datos. La ALU consta de una serie de modulos que permiten realizar operaciones aritmeticas y logicas.",
+        "Los registros internos son pequeñas memorias de alta velocidad dentro de un computador que se utilizan para almacenar datos temporales y realizar operaciones rapidas."
+    ],
+    "memoria": [
+        "En la memoria se almacenaran el programa y los datos que, provenientes de un dispositivo de Entrada Salida o dispositivos de almacenamiento secundario, va a ejecutar la CPU. La matriz de memoria está organizada en palabras, cada una de las cuales tiene asignada una direccion que indica su posicion en la matriz.",
+        "La memoria en un computador es un dispositivo electrónico que almacena temporalmente programas y datos que están siendo utilizados por el procesador, para acceder a ellos más rapidamente."
+    ],
+    "entrada salida": [
+        "Un computador tiene una gran cantidad de dispositivos de entrada y salida. Desde un teclado hasta un monitor de video, pasando por un disco duro, todos son dispositivos que la CPU necesita para obtener datos o para almacenar o mostrar resultados.",
+        "El principal problema de estos dispositivos perifericos es su gran variedad. Muchos de ellos comunican a un operador humano con el computador y otros sirven de conexion con otros computadores.",
+        "El objetivo de cada transferencia es llevar los datos desde el periferico a una zona concreta de la memoria y viceversa."
+    ],
+    "sistemas de interconexión buses": [
+        "La conexion entre los diversos componentes de un computador se efectua fisicamente a traves de los buses. Un bus se define como un enlace de comunicacion compartido que usa multiples cables para conectar subsistemas.",
+        "Cada linea es capaz de transmitir una tensión electrica que representa un uno o un cero binario.",
+        "Las señales de los buses estan agrupadas siguiendo un criterio de funcionalidad:",
+        "Bus de datos. Bus de direcciones. Bus de control. Bus de alimentacion",
+        "Los buses de datos son las iineas por las que se transmiten los datos entre los diversos dispositivos que forman el computador.",
+        "Los buses de direcciones sirven para indicar a la memoria o al resto de dispositivos la posicion del dato que se quiere acceder.",
+        "Los buses de control agrupan todas las señales de control que gobiernan el acceso al bus de datos y direcciones. Agrupa señales de lectura, escritura, arbitraje, entre otros.",
+        "Los buses de alimentacion son los cables o conexiones que suministran energia electrica a los componentes internos del equipo, como la placa madre, la CPU, las tarjetas de expansion y los dispositivos de almacenamiento."
+    ],
+    "perifericos": [
+        "Los perifericos son todos aquellos dispositivos que sin ser imprescindibles en la estructura de un computador, son necesarios para suministrar datos a la maquina o visualizar los resultados.",
+        "Los periféricos de entrada de datos son interruptores, teclados, ratones, pantallas graficas interactivas y digitalizadores de imagenes (escaners)."
+    ],
+    "PE PREGUNTA 01": {
+        "pregunta": "¿Cuál es el objetivo principal del pensamiento computacional?",
+        "opciones": [
+            "a) Resolver problemas utilizando algoritmos y abstracción.",
+            "b) Programar robots y sistemas autónomos.",
+            "c) Diseñar hardware de computadoras."
+        ],
+        "respuesta_correcta": "a"
+    },
+    "PE PREGUNTA 02": {
+        "pregunta": "El primer paso del pensamiento computacional es: identificar el problema.",
+        "opciones": [
+            "a) V",
+            "b) F"
+        ],
+        "respuesta_correcta": "a"
+    },
+    "PE PREGUNTA 03": {
+        "pregunta": "¿Qué es un algoritmo en términos de pensamiento computacional?",
+        "opciones": [
+            "a) Un patrón de diseño visual",
+            "b) Un lenguaje de programación",
+            "c) Una secuencia de pasos para resolver un problema",
+            "d) Una representación gráfica de datos"
+        ],
+        "respuesta_correcta": "c"
+    }
 }
-
-
-
-

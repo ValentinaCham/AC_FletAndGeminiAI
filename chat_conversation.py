@@ -5,7 +5,7 @@ from chatbot import ChatBot
 def main():
     config = ConfigParser()
     config.read('credential.ini')
-    api_key = 'AIzaSyCkNOaAFzGuPw3Gdjn4cBvgrM4_ZR3aqHU'
+    api_key = config['gemini_ai']['API_KEY']
     chatbot = ChatBot(api_key = api_key)
     chatbot.start_conversation()
     # chatbot.clear_conversation()

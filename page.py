@@ -1,5 +1,6 @@
 import flet as ft
 from function_propose import *
+from configparser import ConfigParser
 import json
 import time
 import threading
@@ -218,6 +219,6 @@ def main(page: ft.Page):
     page.on_view_pop = view_pop
     page.go(page.route)
 
-api_key = 'AIzaSyCkNOaAFzGuPw3Gdjn4cBvgrM4_ZR3aqHU'
+api_key = config['gemini_ai']['API_KEY']
 chatbot = ChatBot(api_key = api_key)
 ft.app(target=main)

@@ -10,7 +10,6 @@ from PIL import Image, ImageTk
 
 # CONVERTIR CADENAS DE TEXTO A AUDIO Y REPRODUCIRLAS
 
-
 def texto_a_audio(comando):
     palabra = pyttsx3.init()
     palabra.say(comando)
@@ -24,7 +23,7 @@ def capturar_voz(reconocer, microfono, tiempo_ruido=1.0):
         raise TypeError("'reconocer' no es de la instacia 'Recognizer'")
 
     if not isinstance(microfono, sr.Microphone):
-        raise TypeError("'reconocer' no es de la instacia 'Recognizer'")
+        raise TypeError("'microfono' no es de la instacia 'Microphone'")
 
     with microfono as fuente:
         reconocer.adjust_for_ambient_noise(fuente, duration=tiempo_ruido)

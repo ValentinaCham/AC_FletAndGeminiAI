@@ -46,6 +46,20 @@ def asistente_habla(vista, page, mensaje):
     )
     page.update()
 
+def asistente_imagen(vista, page, linkImagen):
+    (((vista.controls[1]).content).content).controls.append(
+        ft.ListTile(
+            leading=ft.Icon(ft.icons.FACE),
+            title=ft.Image(
+                src=linkImagen,
+                fit=ft.ImageFit.FIT_WIDTH,
+                repeat=ft.ImageRepeat.NO_REPEAT,
+            ),
+            selected=True,
+        )
+    )
+    page.update()
+
 def ingresoDatos1(vista, page):
     texto_a_audio(datos['bienvenida'])
     nombre = ingresar_usuario(vista, page)
@@ -88,23 +102,86 @@ def menu(page):
                             padding=ft.padding.symmetric(vertical=10),
                         )
                     ),
-                    ft.ElevatedButton("Visit Store", on_click=lambda _: page.go("/store")),
+                    ft.ElevatedButton("Aprendizaje", on_click=lambda _: page.go("/learn")),
+                    ft.ElevatedButton("Test", on_click=lambda _: page.go("/test")),
+                    ft.ElevatedButton("Juegos", on_click=lambda _: page.go("/game")),
+                    ft.ElevatedButton("Asistente", on_click=lambda _: page.go("/chatbot")),
                 ],
             )
     viewMenu.scroll = 'AUTO'
     threading.Thread(target=ingresoDatos1, args=(viewMenu, page)).start()
     return viewMenu
-            
+
+def moduloAprender(vista, page):
+    texto_a_audio("Elegiste la opcion APRENDIZAJE.")
+    asistente_habla(vista, page, "Antes de empezar quisiera hacer una introduccion a la estructura de computadores.")
+    texto_a_audio("Antes de empezar quisiera hacer una introduccion a la estructura de computadores.")
+    asistente_imagen(vista, page, "./img/intro/computador.jpg")
+    for i in datos['aprendizaje']:
+        resume = chatbot.send_prompt("Por favor si esto pero resumido y con otras palabras, no lo estiendas, que sea preciso, pero también que sea natural, como una conversacion: " + i + ". Evita repetir cosas que ya hayas resummido antes en tu historial")
+        asistente_habla(vista, page, resume)
+        texto_a_audio(resume)
+    asistente_habla(vista, page, resume)
+    texto_a_audio(resume)
+
 def Aprendizaje(page):
-    return ft.View(
-                    "/store",
+    viewLearn = ft.View(
+                    "/learn",
                     [
-                        ft.AppBar(title=ft.Text("Store"), bgcolor=ft.colors.SURFACE_VARIANT),
+                        ft.AppBar(title=ft.Text("APRENDIZAJE"), bgcolor=ft.colors.SURFACE_VARIANT),
+                        ft.Card(
+                            content=ft.Container(
+                                width=500,
+                                content=ft.Column(
+                                    [
+                                        ft.ListTile(
+                                            leading=ft.Icon(ft.icons.FACE),
+                                            title=ft.Text("Elegiste la opcion APRENDIZAJE."),
+                                            selected=True,
+                                        ),
+                                    ],
+                                    spacing=0,
+                                ),
+                                padding=ft.padding.symmetric(vertical=10),
+                            )
+                        ),
+                    ],
+                )
+    viewLearn.scroll = 'AUTO'
+    threading.Thread(target=moduloAprender, args=(viewLearn, page)).start()
+    return viewLearn
+
+
+def Test(page):
+    return ft.View(
+                    "/test",
+                    [
+                        ft.AppBar(title=ft.Text("EXAMEN"), bgcolor=ft.colors.SURFACE_VARIANT),
                         ft.ElevatedButton("Go Home", on_click=lambda _: page.go("/")),
                     ],
                 )
 
+def Game(page):
+    return ft.View(
+                    "/game",
+                    [
+                        ft.AppBar(title=ft.Text("JUEGO"), bgcolor=ft.colors.SURFACE_VARIANT),
+                        ft.ElevatedButton("Go Home", on_click=lambda _: page.go("/")),
+                    ],
+                )
+
+def Chatbot(page):
+    return ft.View(
+                    "/chatbot",
+                    [
+                        ft.AppBar(title=ft.Text("CHATBOT"), bgcolor=ft.colors.SURFACE_VARIANT),
+                        ft.ElevatedButton("Go Home", on_click=lambda _: page.go("/")),
+                    ],
+                )
+
+
 def main(page: ft.Page):
+    flagInit = False
     page.title = "Routes Example"
     chatbot.start_conversation()
 
@@ -114,15 +191,21 @@ def main(page: ft.Page):
             #The second is controls, add with append
             menu(page)
         )
-        if page.route == "/store":
+        if page.route == "/learn":
             page.views.append(
-                ft.View(
-                    "/store",
-                    [
-                        ft.AppBar(title=ft.Text("Store"), bgcolor=ft.colors.SURFACE_VARIANT),
-                        ft.ElevatedButton("Go Home", on_click=lambda _: page.go("/")),
-                    ],
-                )
+                Aprendizaje(page)
+            )
+        elif page.route == "/test":
+            page.views.append(
+                Test(page)
+            )
+        elif page.route == "/game":
+            page.views.append(
+                Game(page)
+            )
+        elif page.route == "/chatbot":
+            page.views.append(
+                Chatbot(page)
             )
         page.update()
 

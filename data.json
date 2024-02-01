@@ -1,0 +1,43 @@
+{
+  "name": "user",
+  "Almacenar datos": {
+    "definicion": "Almacenar datos es el proceso de guardar datos en un medio de almacenamiento para que puedan ser recuperados y utilizados posteriormente.",
+    "pasos": [
+      {
+        "paso": "Preparaci\ufffdn de los datos",
+        "descripcion": "Los datos se preparan para el almacenamiento convirti\ufffdndolos a un formato adecuado. Esto puede implicar comprimir los datos, cifrarlos o dividirlos en bloques m\ufffds peque\ufffdos."
+      },
+      {
+        "paso": "Escritura de los datos",
+        "descripcion": "Los datos preparados se escriben en el medio de almacenamiento. Esto se hace utilizando un dispositivo de almacenamiento, como un disco duro o una unidad flash USB."
+      },
+      {
+        "paso": "Gesti\ufffdn de los datos",
+        "descripcion": "Una vez que los datos se han almacenado, deben gestionarse para garantizar que est\ufffdn disponibles cuando se necesiten. Esto puede implicar realizar copias de seguridad de los datos, organizar los datos en directorios y archivos, y controlar el acceso a los datos."
+      }
+    ],
+    "medios_de_almacenamiento": [
+      {
+        "medio": "Discos duros",
+        "descripcion": "Los discos duros son dispositivos de almacenamiento magn\ufffdtico que utilizan platos giratorios para almacenar datos. Son relativamente baratos y ofrecen una gran capacidad de almacenamiento. Sin embargo, son m\ufffds lentos que otros medios de almacenamiento, como las unidades de estado s\ufffdlido."
+      },
+      {
+        "medio": "Unidades de estado s\ufffdlido (SSD)",
+        "descripcion": "Las unidades de estado s\ufffdlido son dispositivos de almacenamiento que utilizan memoria flash para almacenar datos. Son mucho m\ufffds r\ufffdpidas que los discos duros, pero tambi\ufffdn son m\ufffds caras."
+      },
+      {
+        "medio": "Unidades flash USB",
+        "descripcion": "Las unidades flash USB son dispositivos de almacenamiento port\ufffdtiles que utilizan memoria flash para almacenar datos. Son peque\ufffdas y ligeras, y se pueden conectar a un computador mediante un puerto USB."
+      },
+      {
+        "medio": "Cintas magn\ufffdticas",
+        "descripcion": "Las cintas magn\ufffdticas son un medio de almacenamiento que utiliza una cinta magn\ufffdtica para almacenar datos. Son relativamente baratas y ofrecen una gran capacidad de almacenamiento. Sin embargo, son m\ufffds lentas que otros medios de almacenamiento y pueden ser menos fiables."
+      },
+      {
+        "medio": "Discos \ufffdpticos",
+        "descripcion": "Los discos \ufffdpticos son un medio de almacenamiento que utiliza un l\ufffdser para almacenar datos en un disco \ufffdptico. Son relativamente baratos y ofrecen una gran capacidad de almacenamiento. Sin embargo, son m\ufffds lentos que otros medios de almacenamiento y pueden ser menos fiables."
+      }
+    ]
+  },
+  "computador": "Un computador, tambi\u00e9n conocido como computadora u ordenador, es una m\u00e1quina electr\u00f3nica capaz de procesar informaci\u00f3n. Est\u00e1 compuesto por hardware y software. El hardware es la parte f\u00edsica del computador, como el procesador, la memoria RAM, el disco duro, la tarjeta gr\u00e1fica, etc. El software es la parte l\u00f3gica del computador, como el sistema operativo, los programas y las aplicaciones."
+}

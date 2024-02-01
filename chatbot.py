@@ -28,7 +28,8 @@ class ChatBot:
                 generation_config=self._generation_config(temperature),
             )
             response.resolve()
-            return f'{response.text }\n' + '---' * 20
+            self._conversation_history.append(self._construct_message(response.text, role='assistant'))
+            return f'{response.text }\n'
         except Exception as e:
             raise GeniAIException(e.message)
     
@@ -64,3 +65,4 @@ class ChatBot:
                 self._construct_message('From now on, return the output as a JSON object that can be loaded in python with the key as \'text\'. For example, {"text": "<output goes here>"}'),
                 self._construct_message('{"text": "Sure, I can return the output as a regular JSON"}', 'model')
             ]
+

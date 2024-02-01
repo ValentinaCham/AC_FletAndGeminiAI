@@ -1,0 +1,5 @@
+Valentina
+2024-02-01 07:24:56El usuario respondio de forma incorrecta a la pregunta: ¿Cuál es el objetivo principal del pensamiento computacional?
+2024-02-01 07:25:27El usuario respondio de forma correcta a la pregunta: El primer paso del pensamiento computacional es: identificar el problema.
+2024-02-01 07:25:57El usuario respondio de forma correcta a la pregunta: ¿Qué es un algoritmo en términos de pensamiento computacional?
+2024-02-01 07:52:54El usuario realizo un repaso
